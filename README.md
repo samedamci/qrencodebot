@@ -19,6 +19,7 @@ $ pip3 install --user -r requirements.txt
 + Create `environment` file with your bot token and instance URL.
 ```
 TOKEN=your_token_here
+CACHING_CHAT_ID=chat_id_to_send_images
 ```
 + Start bot with `python3 main.py`.
 
@@ -30,5 +31,6 @@ TOKEN=your_token_here
 ```
 + Run bot in container.
 ```
-# docker run --rm -d -e TOKEN='your_token_here' --name qrencodebot samedamci/qrencodebot
+# docker run --rm -d -e TOKEN='your_token_here' -e \
+	CACHING_CHAT_ID='chat_id_to_send_images' --name qrencodebot samedamci/qrencodebot
 ```

@@ -3,6 +3,7 @@ FROM python:3.9-alpine
 LABEL maintainer="samedamci@disroot.org"
 
 ENV TOKEN TOKEN
+ENV CACHING_CHAT_ID CACHING_CHAT_ID
 RUN apk add --no-cache gcc musl-dev linux-headers libc-dev libffi-dev libressl-dev && \
     apk update py3-pip openssl && \
     pip3 install cryptography==3.1.1 python-telegram-bot python-dotenv qrcode && \
