@@ -16,7 +16,7 @@ $ git clone https://github.com/samedamci/qrencodebot && cd qrencodebot
 ```
 $ pip3 install --user -r requirements.txt
 ```
-+ Create `environment` file with your bot token and instance URL.
++ Create `environment` file with your bot token and caching chat ID.
 ```
 TOKEN=your_token_here
 CACHING_CHAT_ID=chat_id_to_send_images
